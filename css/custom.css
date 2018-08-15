@@ -1,0 +1,46 @@
+/* base styling for all buttons */
+
+.button {
+/* default styling */
+    -fx-background-color: lightgray;
+    -fx-border-radius: 0;
+    -fx-border-width: .5;
+    -fx-border-color: grey;
+
+}
+.button:hover {
+    /* styling on hover */
+    -fx-background-color: darkgrey;
+}
+/* styling on empty click */
+#button:disabled{
+    -fx-background-color: #dddddd;
+}
+/* styling on bomb click */
+#bombClicked{
+    -fx-background-color: indianred;
+    -fx-border-radius: 0;
+    -fx-border-width: .5;
+    -fx-border-color: darkred;
+}
+/* bomb styling used for debugging */
+#bomb{
+    -fx-background-color: dimgrey;
+    -fx-border-width: .5;
+    -fx-border-color: #111111;
+}
+
+/* styling on bomb flagged */
+#correctFlag:disabled{
+    -fx-background-color: forestgreen;
+    -fx-border-radius: 0;
+    -fx-border-width: .5;
+    -fx-border-color: green;
+}
+/* styling on empty flagged */
+#incorrectFlag:disabled{
+    -fx-background-color: yellow;
+    -fx-border-radius: 0;
+    -fx-border-width: .5;
+    -fx-border-color: sandybrown;
+}
